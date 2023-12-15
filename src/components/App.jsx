@@ -17,12 +17,6 @@ class App extends Component {
     }));
   };
 
-  // onLeaveFeedback = option => {
-  //   this.setState(prevState => ({
-  //     [option]: this.prevState.option + 1,
-  //   }));
-  // };
-
   countTotalFeedback() {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
@@ -35,12 +29,6 @@ class App extends Component {
     );
     return good ? positiveFeedbackPercentage : 0;
   }
-
-  // setOption = () =>
-  //   ['Good', 'Neutral', 'Bad'].map(opt => {
-  //     console.log(opt);
-  //     return opt;
-  //   });
 
   render() {
     const { good, neutral, bad } = this.state;
